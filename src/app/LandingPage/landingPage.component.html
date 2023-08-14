@@ -1,0 +1,326 @@
+
+<div>
+    <nav class="navbar navbar-expand-sm bg-light navbar-style">
+        <div class="row" style="width: 100%;">
+            <div class="col-md-4 col-lg-4">
+                <a class="navbar-brand" href="#">
+                    <img src="../../../assets/TCDLogo.JPG" alt="Logo" width="100" />
+                </a>
+            </div>
+            <div class="col-md-4 col-lg-4 p-2 text-center">
+                <h4>Entry Transfer Request Description</h4>
+            </div>
+            <div class="col-md-4 col-lg-4" >
+                <!-- Links -->
+                <ul class="navbar-nav ms-auto" style="float: right;">
+                    <li class="nav-item ">
+                        <a class="nav-link usericon" href="#">
+                            <i class="fa fa-user-o" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link logoutButton" href="#">
+                            <i class="fa fa-sign-out" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="container-area mt-4">
+    <!-- Page start -->
+    <div>
+        <div class="description">
+            
+            <div class="header">
+                <h5>Breif Description</h5>
+            </div>
+            <div class="tet-area">
+                <textarea ></textarea>
+            </div>
+
+            <div class="header">
+                <h5>Description of instalation point</h5>
+            </div>
+
+            <div class="descriptionarea row">
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class=" firstcolumn">
+                        <label>ATM Type :</label>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-9 col-lg-9">
+                    <div class="secondcolumn">
+                        <select>
+                            <option
+                                selected="selected" 
+                                [ngValue]="types.ATM_Type"
+                                *ngFor="let types of getOption.ATMType"> 
+                                {{types.ATM_Type}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="descriptionarea row">
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class=" firstcolumn">
+                        <label>Type Of Establishment :</label>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-9 col-lg-9">
+                    <div class="secondcolumn">
+                        <select>
+                            <option
+                                selected="selected" 
+                                *ngFor="let types of getOption.TypeOfEstablishment"> 
+                                {{types.TypeOfEstablishment_Type}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="descriptionarea row">
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class=" firstcolumn">
+                        <label>Sub Local :</label>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-9 col-lg-9">
+                    <div class="secondcolumn">
+                        <select name="Sub Local">
+                            <option
+                                selected="selected" 
+                                value="Selecdone Sub Local"
+                                *ngFor="let types of getOption.SubLocal"> 
+                                {{types.SubLocal_Type}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="descriptionarea row">
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class=" firstcolumn">
+                        <label>Region :</label>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-9 col-lg-9">
+                    <div class="secondcolumn">
+                        <select name="Region">
+                            <option
+                                selected="selected" 
+                                value="Selecdone Region"
+                                *ngFor="let types of getOption.Region"> 
+                                {{types.Region_Type}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="descriptionarea row">
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class=" firstcolumn">
+                        <label>Commune :</label>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class="secondcolumn">
+                        <select name="Region">
+                            <option
+                                selected="selected" 
+                                value="selected Commune"
+                                *ngFor="let types of getOption.Commune"> 
+                                {{types.Commune_Type}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-2 col-lg-2">
+                    <div class=" firstcolumn">
+                        <label>Locales :</label>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="secondcolumn">
+                        <select name="Comuna">
+                            <option
+                                selected="selected" 
+                                value="Selected Locales_Type"
+                                *ngFor="let types of getOption.Locales"> 
+                                {{types.Locales_Type}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="descriptionarea row">
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class=" firstcolumn">
+                        <label>Local Name :</label>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class="secondcolumn">
+                        <input type="text" value="TCD">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-2 col-lg-2">
+                    <div class=" firstcolumn">
+                        <label>Address :</label>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="secondcolumn">
+                        <input type="text" value="HYD">
+                    </div>
+                </div>
+            </div>
+
+            <div class="descriptionarea row">
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class=" firstcolumn">
+                        <label>SBIF Location:</label>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-9 col-lg-9">
+                    <div class="secondcolumn">
+                        <select name="SBIF Location">
+                            <option
+                                selected="selected" 
+                                value="Selecdone Localidad SBIF"
+                                *ngFor="let types of getOption.SBIF_Location"> 
+                                {{types.SBIF_Location}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="descriptionarea row">
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class=" firstcolumn">
+                        <label>Backup Electric Power :</label>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class="secondcolumn">
+                        <input type="radio" id="and" name="and" value="and">&nbsp;
+                        <label for="and">And</label>
+                        <br>
+                        <input type="radio" id="and" name="and" value="and">&nbsp;
+                        <label for="No">No</label>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-2 col-lg-2">
+                    <div class="secondcolumn">
+                        <input type="checkbox" id="ups" name="ups" value="UPS" disabled>&nbsp;
+                        <label for="ups"> UPS</label>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="secondcolumn">
+                        <input type="checkbox" id="groupo" name="groupo" value="group" disabled>&nbsp;
+                        <label for="ups"> Group Electrogen</label><br>
+                        <!-- </div> -->
+
+                        <label>Autonomous At :</label>
+                        <select name="Autonomous At ">
+                            <option value="Autonomous At">00</option>
+                        </select>
+                        :
+                        <select name="Autonomous At ">
+                            <option value="Autonomous At">00</option>
+                            hrs.
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="descriptionarea row">
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class=" firstcolumn">
+                        <label>Local Contact 1 :</label>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class="secondcolumn">
+                        <input type="text" value="Contacto Local">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-2 col-lg-2">
+                    <div class=" firstcolumn">
+                        <label>Phone(s) Contact 1 *:</label>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="secondcolumn">
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+
+            <div class="descriptionarea row">
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class=" firstcolumn" disabled>
+                        <label>local Contact 2* :</label>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class="secondcolumn">
+                        <input type="text" value="Contacto Banco">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-2 col-lg-2">
+                    <div class=" firstcolumn" disabled>
+                        <label>Phone(s) Contact 2:</label>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="secondcolumn">
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+
+            <div class="descriptionarea row">
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class=" firstcolumn">
+                        <label>Instalation request Date:</label>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-9 col-lg-9">
+                    <input type="date">&nbsp;
+
+                    <select name="Hour" [(ngModel)]="selectedHour" class="custom-select"> 
+                        <option *ngFor="let hour of hoursRange" [ngValue]="hour">{{ formatNumber(hour) }}</option>
+                    </select>
+                    :
+                    <select name="Minute" [(ngModel)]="selectedMinute" class="custom-select">
+                        <option *ngFor="let minute of minutesRange" [ngValue]="minute">{{ formatNumber(minute) }}</option>
+                    </select>
+                </div>
+            </div>
+            <div class="descriptionarea row">
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class=" firstcolumn">
+                        <label>Attach Plan :</label>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-9 col-lg-9">
+                    <div class="secondcolumn">
+                        <button>To Examine</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+    </div>

@@ -1,0 +1,83 @@
+.details h6 {
+  color: rgb(170, 169, 169);
+}
+.header {
+  margin-top: 20px;
+  line-height: 0%;
+}
+
+.icons-area {
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius: 25px;
+  padding: 5px;
+}
+.logo-ath{
+  margin-top: 10px;
+}
+
+.icons-area span {
+  font-weight: 700;
+}
+
+.icons-area i {
+  padding: 10px;
+  padding-bottom: 10px;
+  border-radius: 50px;
+  border: 1px solid rgb(80, 77, 73);
+  margin-right: 10px;
+  color: #fff;
+  background-color: rgb(255, 157, 0);
+  box-shadow: rgba(0, 0, 0, 0.35) 1px, 0px, 1px;
+}
+.container-area {
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center;
+}
+
+.collpseArea{
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+.rowid {
+  border: 1px solid rgb(235, 38, 38);
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #e62f2f;
+  border-radius: 25px;
+
+}
+.rowid:hover {
+  background-color: rgb(247, 135, 135);
+}
+
+.images{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.container-area{
+  margin-top: 30px;
+}
+.navbar-style {
+  background-color: #EC0000E9 !important;
+  color: #fff;
+  align-items: center;
+}
+
+.textstyle{
+  align-content: flex-start;
+  text-align: right;
+}
+.usericon{
+  color: #fff;
+}
+.logoutButton{
+  color: #fff;
+  margin-left: 20px;
+}
