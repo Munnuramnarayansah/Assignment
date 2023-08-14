@@ -1,0 +1,21 @@
+{
+    "/dev/**": {
+        "target": "https://f8ilxp81c1.execute-api.us-east-1.amazonaws.com",
+        "secure": false,
+        "logLevel": "debug",
+        "changeOrigin": true
+    },
+    
+    "/prod/**": {
+        "target": "https://f8ilxp81c1.execute-api.us-east-1.amazonaws.com",
+        "secure": false,
+        "logLevel": "debug",
+        "changeOrigin": true
+    },
+    "/certification/**": {
+        "target": "https://f8ilxp81c1.execute-api.us-east-1.amazonaws.com",
+        "secure": false,
+        "logLevel": "debug",
+        "changeOrigin": true
+    }
+}
